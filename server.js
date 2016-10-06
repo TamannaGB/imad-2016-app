@@ -6,7 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleOne={
+var articles = {
+'article-one':{
     title:'Tamanna Gupta | Aticle-one',
     heading:'Article One',
     date:'30 September 2016',
@@ -21,7 +22,48 @@ var articleOne={
             </p>
             
             <p>
-                content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.`
+                content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.
+                
+            </p>`
+},
+'article-two' : {
+    title:'Tamanna Gupta | Aticle-two',
+    heading:'Article Two',
+    date:' 6 October 2016',
+    content:`<p>
+                content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.
+                
+            </p>
+            
+            <p>
+                content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.
+                
+            </p>
+            
+            <p>
+                content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.
+                
+            </p>`
+},
+'article-three' : {
+    title:'Tamanna Gupta | Aticle-three',
+    heading:'Article Three',
+    date:'15 October 2016',
+    content:`<p>
+                content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.
+                
+            </p>
+            
+            <p>
+                content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.
+                
+            </p>
+            
+            <p>
+                content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.content of article-one.
+                
+            </p>`
+}
 };
 
 
@@ -60,8 +102,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+  var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
