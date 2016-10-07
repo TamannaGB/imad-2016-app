@@ -122,7 +122,7 @@ app.get('/', function (req, res) {
 
 var comments=[];
 app.get('/submit-comment',function(req,res){
-   var comment=req.query.comment;
+   var comment=req.query.name;
    comments.push(comment);
    res.send(JSON.stringify(comments));
 });
