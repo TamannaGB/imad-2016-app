@@ -92,6 +92,17 @@ var htmlTemplate=`<html>
             
             ${data.content}
         </div>
+        <hr>
+        <h4> Comments </h4>
+        <br>
+        <div>
+        
+        </div>
+        <hr>
+        <h4> Add a Comment </h4>
+        <div> 
+        
+        </div>
     </div>    
     </body>
 </html>`;
