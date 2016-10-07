@@ -4,7 +4,7 @@ submit.onclick = function(){
     request.onreadystatechange = function(){
         if(request.readyState == XMLhttpRequest.DONE){
             if(request.status == 200){
-                var commecnts=request.responseText;
+                var comments=request.responseText;
                 comments=JSON.parse(comments);
                 var list='';
                 for(var i=0;i<comments.length;i++){
