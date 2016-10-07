@@ -101,8 +101,10 @@ var htmlTemplate=`<html>
         <hr>
         <h3> Add a Comment </h3>
         <div> 
-        <input type="text" name="Add a Comment"/><br>
-        <input type="text" name="User Id"/><br>
+        <input type="text" value="Add a Comment"/><br>
+        <br>
+        <input type="text" value="User Id"/><br>
+        <br>
         <input type="submit" value="Submit"/>
         </div>
     </div>    
