@@ -95,15 +95,17 @@ var htmlTemplate=`<html>
         <hr>
         <h3> Comments </h3>
         <br>
-        <div id="comment_list">
+        <div>
+        <ul id="comment_list">
         
+        </ul>
         </div>
         <hr>
         <h3> Add a Comment </h3>
         <div> 
-        <input type="text" value="Add a Comment" id="comment"/><br>
+        <input type="text" placeholder="Add a Comment" id="comment"/><br>
         <br>
-        <input type="text" value="User Id" id="user_id"/><br>
+        <input type="text" placeholder="User Id" id="user_id"/><br>
         <br>
         <input type="submit" value="Submit" id="submit_comment"/>
         </div>
