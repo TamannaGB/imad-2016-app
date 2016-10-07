@@ -101,7 +101,7 @@ var htmlTemplate=`<html>
         <hr>
         <h4> Add a Comment </h4>
         <div> 
-        
+        <input type="text" name="Add a Comment">
         </div>
     </div>    
     </body>
