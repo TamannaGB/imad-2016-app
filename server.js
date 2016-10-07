@@ -93,13 +93,13 @@ var htmlTemplate=`<html>
             ${data.content}
         </div>
         <hr>
-        <h4> Comments </h4>
+        <h3> Comments </h3>
         <br>
         <div>
         
         </div>
         <hr>
-        <h4> Add a Comment </h4>
+        <h3> Add a Comment </h3>
         <div> 
         <input type="text" name="Add a Comment"/><br>
         <input type="text" name="User Id"/><br>
