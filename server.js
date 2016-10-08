@@ -96,7 +96,7 @@ var htmlTemplate=`<!doctype html>
         </div>
         <hr>
         <h3> Comments </h3>
-        <br>
+
         <div>
         <ul id="comment_list">
         
