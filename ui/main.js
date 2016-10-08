@@ -1,8 +1,8 @@
 var submit=document.getElementById("submit_comment");
 submit.onclick = function(){
-    var request = new XMLhttpRequest();
+    var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
-        if(request.readyState == XMLhttpRequest.DONE){
+        if(request.readyState == XMLHttpRequest.DONE){
             if(request.status == 200){
                 var comments=request.responseText;
                 comments=JSON.parse(comments);
