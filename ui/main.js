@@ -1,5 +1,5 @@
-var submit=document.getElementById("submit_comment");
-submit.onclick = function(){
+var button=document.getElementById("submit_comment");
+button.onclick = function(){
     alert("submit button is clicked");
     var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
