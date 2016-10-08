@@ -78,9 +78,7 @@ var htmlTemplate=`<!doctype html>
         <meta name='viewport' content='width_device-width , initial-scale=1'/>
     </head>
     <body>
-    <script type="text/javascript" src="/ui/main.js">
-    alert("executing js");
-    </script>
+    
     <div class="container">    
         <a href='/'>Home</a>
         
@@ -113,7 +111,10 @@ var htmlTemplate=`<!doctype html>
         <br>
         <input type="submit" value="Submit" id="submit_comment"/>
         </div>
-    </div>    
+    </div>
+    <script type="text/javascript" src="/ui/main.js">
+    alert("executing js");
+    </script>
     </body>
 </html>`;
 
