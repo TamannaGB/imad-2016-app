@@ -5,7 +5,7 @@ button.onclick = function(){
     var data = comment.value;
     var user = document.getElementById("user_id");
     var name = user.value;
-    if(data !== null && name !== null ){
+    if(data !== "" && name !== "" ){
         var request = new XMLHttpRequest();
         request.onreadystatechange = function(){
         if(request.readyState == XMLHttpRequest.DONE){
