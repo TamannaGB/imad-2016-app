@@ -128,7 +128,7 @@ var comments=[];
 app.get('/submit-comment',function(req,res){
    var comment=req.query.comment;
    comments.push(comment);
-   var name=req.query.name;
+   var name=req.query.user_id;
    comments.push(name);
    res.send(JSON.stringify(comments));
 });
