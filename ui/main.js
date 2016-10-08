@@ -18,6 +18,6 @@ submit.onclick = function(){
     };
     var comment = document.getElementById("comment");
     var data = comment.value;
-    request.open('GET','http://tamannagb.imad.hasura-app.io/submit-comment?comment='+data,true);
+    request.open('GET','http://tamannagb.imad.hasura-app.io/submit-comment?comment=hi',true);
     request.send(null);
 };
