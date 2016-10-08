@@ -68,7 +68,8 @@ var articles = {
 
 
 function createTemplate(data){
-var htmlTemplate=`<html>
+var htmlTemplate=`<!doctype html>
+<html>
     <head>
         <title>
             ${data.title}
