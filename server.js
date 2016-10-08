@@ -77,6 +77,8 @@ var htmlTemplate=`<html>
         <meta name='viewport' content='width_device-width , initial-scale=1'/>
     </head>
     <body>
+    <script type="text/javascript" src="/ui/main.js">
+        </script>
     <div class="container">    
         <a href='/'>Home</a>
         
