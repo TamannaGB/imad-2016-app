@@ -8,8 +8,8 @@ button.onclick = function(){
                 var comments=request.responseText;
                 comments=JSON.parse(comments);
                 var list='';
-                for(var i=0;i<comments.length;i++){
-                    list =list + '<li>'+comments[i]+'</li>';
+                for(var i=0;i<comments.length;i=i+2){
+                    list =list + '<li>'+comments[i+1]+ ' : ' +comments[i]+ '</li>';
                 }
                 var ul=document.getElementById("comment_list");
                 ul.innerHTML=list;
@@ -19,6 +19,8 @@ button.onclick = function(){
     };
     var comment = document.getElementById("comment");
     var data = comment.value;
-    request.open('GET','http://tamannagb.imad.hasura-app.io/submit-comment?comment='+data,true);
+    var user = document.getElementById("user_id");
+    var name = user.value;
+    request.open('GET','http://tamannagb.imad.hasura-app.io/submit-comment?comment='+data+'?user_id='+name,true);
     request.send(null);
 };
