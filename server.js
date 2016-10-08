@@ -128,6 +128,8 @@ var comments=[];
 app.get('/submit-comment',function(req,res){
    var comment=req.query.comment;
    comments.push(comment);
+   var name=req.query.name;
+   comments.push(name);
    res.send(JSON.stringify(comments));
 });
 
