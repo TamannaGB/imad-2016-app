@@ -9,7 +9,7 @@ button.onclick = function(){
                 comments=JSON.parse(comments);
                 var list='';
                 for(var i=0;i<comments.length;i++){
-                    list = '<li>'+comments[i]+'</li>';
+                    list =list + '<li>'+comments[i]+'</li>';
                 }
                 var ul=document.getElementById("comment_list");
                 ul.innerHTML=list;
