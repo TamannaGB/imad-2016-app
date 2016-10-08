@@ -113,7 +113,6 @@ var htmlTemplate=`<!doctype html>
         </div>
     </div>
     <script type="text/javascript" src="/ui/main.js">
-    alert("executing js");
     </script>
     </body>
 </html>`;
