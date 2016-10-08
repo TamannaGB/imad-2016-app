@@ -21,6 +21,6 @@ button.onclick = function(){
     var data = comment.value;
     var user = document.getElementById("user_id");
     var name = user.value;
-    request.open('GET','http://tamannagb.imad.hasura-app.io/submit-comment?comment='+data+'?user_id='+name,true);
+    request.open('GET','http://tamannagb.imad.hasura-app.io/submit-comment?comment='+data+'&user_id='+name,true);
     request.send(null);
 };
