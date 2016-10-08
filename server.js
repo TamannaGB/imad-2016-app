@@ -79,7 +79,8 @@ var htmlTemplate=`<!doctype html>
     </head>
     <body>
     <script type="text/javascript" src="/ui/main.js">
-        </script>
+    alert("executing js");
+    </script>
     <div class="container">    
         <a href='/'>Home</a>
         
